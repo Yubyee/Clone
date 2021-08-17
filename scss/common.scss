@@ -1,0 +1,284 @@
+@import '_mixin.scss';
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    color: #1a1a1a;
+}
+img{vertical-align: top;}
+ul, li, ol{list-style: none;}
+a{text-decoration: none;}
+
+header{
+    .header_box{
+        .topbanner{
+            @include width100();
+            height: 40px;
+            background-color: #c41e20;
+            position: relative;
+            p{
+                text-align: center;
+                font-size: 14px;
+                line-height: 40px;        
+                color: #fff;
+            }
+            button{
+                position: absolute;
+                top: 0;
+                right: 40px;
+                width: 40px;
+                height: 40px;
+                border: none;
+                background: url('../img/close.png') no-repeat center center;
+            }
+        }
+        
+        .header{
+            @include width100(); 
+            z-index: 1;
+            .header_wrap{
+                height: 90px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin: 0 auto;
+                .logo{
+                    h1{
+                        width: 135px; height: 38px;
+                        background: url('../img/logo_w.png') no-repeat center center;
+                        margin-right: 40px;
+                        font-size: 0;
+                    }                
+                }
+                .menu{
+                    width: 71%;
+                    li{
+                        display: inline-block;            
+                        a{
+                            color: #fff;
+                            margin-right: 30px;
+                            text-transform: uppercase
+                        }
+                        .menu_sub{
+                            @include width100();
+                            position: absolute;
+                            left: 0; top: 90px;
+                            background-color: #fff;
+                            display: none;
+                            .menu_sub_wrap{
+                                width: 1330px;
+                                margin: 0 auto;
+                                display: flex;
+                                position: relative;
+                                .menu_sub_left{                            
+                                    width: 180px;                            
+                                    padding: 30px 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    li{line-height: 2;}
+                                }
+                                .menu_sub_right{
+                                    width: 200px;                                                    
+                                    padding: 30px 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    li{line-height: 2;}
+                                }
+                                .menu_sub_img{
+                                    position: absolute;    
+                                    right: 0;                        
+                                    display: flex;
+                                    justify-content: space-between;                            
+                                    figure{
+                                        width: 200px;
+                                        margin: 0 10px;
+                                        position: relative;
+                                        img{
+                                            width: 100%;
+                                        }
+                                        figcaption{
+                                            display: none;
+                                            position: absolute;
+                                            top: 0; left: 0;
+                                            @include width100();
+                                            height: 100%;
+                                            color: #fff;                                   
+                                            align-items: center;
+                                            text-align: center;
+                                            background: rgba($color: #000000, $alpha: 0.2); 
+                                            opacity: 0;   
+                                            transition: 0.2s;                            
+                                        }
+                                        &:hover figcaption{   
+                                            display: flex;        
+                                            opacity: 1;                                                            
+                                            
+                                        }
+                                    }
+                                }
+                            }                   
+                        }
+                    }
+                }
+                .quick{
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        display: inline-block;
+                        width: 30px; height: 90px;
+                        margin-left: 32px;
+                        font-size: 0;
+                    }
+                    .my{background: url('../img/mypage_w.png') no-repeat 100% center;}
+                    .search{background: url('../img/search_w.png') no-repeat 100% center;}
+                    .like{background: url('../img/wish_w.png') no-repeat 100% center;}
+                    .cart{background: url('../img/cart_w.png') no-repeat 100% center;}
+                }
+            } 
+            &.scrolled{
+                background-color: #fff;
+                .header_wrap{
+                    h1{
+                        background: url('../img/logo_r.png') no-repeat center center;
+                    }
+                    .menu{
+                        li{         
+                            a{
+                                color: #1a1a1a;
+                            }
+                        }
+                    }
+                    .quick{
+                        .my{background: url('../img/mypage_b.png') no-repeat 100% center;}
+                        .search{background: url('../img/search_b.png') no-repeat 100% center;}
+                        .like{background: url('../img/wish_b.png') no-repeat 100% center;}
+                        .cart{background: url('../img/cart_b.png') no-repeat 100% center;}
+                    }
+                } 
+            }   
+        }
+    }
+}
+
+footer{
+    @include width100();
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    min-width: 1380px;
+    .footer_wrap{
+        @include footerWrap();
+        margin-bottom: 30px;
+        .footer_left{
+            width: 685px;
+            .cscenter{
+                margin-bottom: 40px;
+                .phone{
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                .time{
+                    font-size: 13px;
+                    line-height: 23px;
+                }
+                .email{
+                    font-size: 13;
+                    font-weight: 400;
+                    line-height: 23px;
+                    color: #909090;
+                }
+            }
+            .copyright{
+                margin-bottom: 40px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    @include footerWrapP();                
+                }
+                span{
+                    display: inline-block;
+                    width: 1px;
+                    height: 11px;
+                    background: url('../img/line.png') no-repeat center center;
+                }
+            }
+            .sns{
+                a{
+                    display: inline-block;
+                    width: 35px; height: 35px;
+                    margin-right: 15px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .footer_right{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .notice{
+                li{
+                    text-align: right;
+                    margin-left: 50px;
+                    line-height: 30px;                
+                    font-size: 13px;
+                }
+            }
+            .familysite{
+                position: absolute;
+                right: 0; bottom: 0;
+                .family_btn{
+                    right: 0; bottom: 0;
+                    @include alineCenter();
+                    padding: 5px 20px;
+                    border: 1px solid #e5e5e5;
+                    border-radius: 30px;
+                    p{
+                        margin-right: 10px;
+                        line-height: 33px;
+                    }
+                }
+                .family_list{
+                    @include width100();
+                    height: 180px;
+                    padding: 10px 0 5px 15px;                       
+                    overflow-y: scroll;   
+                    display: none;              
+                    .family_list_wrap{                        
+                        li{
+                            font-size: 13px;
+                            line-height: 30px
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .footer_bottom{
+        @include footerWrap();
+        padding-top: 30px;
+        border-top: 1px solid #e5e5e5;
+        p{
+            @include footerWrapP();
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                margin-right: 30px;
+                p{
+                    display: inline-block;
+                    width: 21px; height: 21px;
+                    img{@include width100();}
+                }
+                span{
+                    @include footerWrapP();
+                }
+                
+            }
+        }
+    }
+}

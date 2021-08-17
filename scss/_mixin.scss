@@ -1,0 +1,132 @@
+// common
+@mixin width100 {
+    width: 100%;
+}
+
+@mixin footerWrap {
+    max-width: 1720px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin footerWrapP{
+    font-size: 13px;
+    color: #909090;
+    line-height: 25px;  
+    letter-spacing: -1px;   
+}
+
+
+// main
+@mixin mainBox{
+    width: 1920px;    
+    margin: 0 auto;
+}
+
+// Contents
+@mixin alineCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin slideTitle {    
+    margin: 70px 0 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+@mixin slideWrap {
+    margin: 0 auto;
+    max-width: 1720px;
+    width: 90%;
+    display: flex;
+    justify-content: left;
+}
+@mixin slideDetailA {
+    font-size: 16px;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 17px;
+    display: inline-block;
+}
+@mixin slideDetailBtn{
+    width: 10%;
+    height: 19px;
+    background: url('../img/index/like.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    &:active{transform: scale(0.99);}
+    font-size: 0;
+}
+@mixin slidePrice{
+    margin: 20px 0;
+    height: 22px;
+    display: flex;    
+    align-items: flex-end;
+}
+@mixin slidePriceSpan1{
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 6px;
+}
+@mixin slidePriceSpan2{
+    line-height: 1.5;
+    text-decoration: line-through;
+    color: #b9b9b9;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 6px;
+}
+@mixin slidePriceSpan3{
+    line-height: 1.5;
+    color: #c41e20;
+    font-size: 16px;
+}
+@mixin slideP{
+    font-size: 14px;
+}
+@mixin slideStock {
+    margin-top: 10px;  
+    height: 16px;
+}
+
+// Sub option
+@mixin optionWrap{
+    // width: 100%;  
+    margin-bottom: 40px;
+}
+@mixin optionTitle{
+    padding-top: 24px;
+    font-size: 14px;
+}
+@mixin optionUl{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+@mixin optionLi{
+    border: 1px dashed #e5e5e5;
+    font-size: 11px;
+    padding: 6px 5px;
+    margin: 0 5px 4px 0;
+}
+@mixin optionEssential{
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+// Size
+@mixin sizeBox{
+    border-bottom: 1px solid #eeeeee;
+    padding: 24px;  
+}
+@mixin sizeBold{
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+}

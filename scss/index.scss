@@ -1,0 +1,597 @@
+@import '_mixin.scss';
+
+.header{
+    position: absolute;
+    top: 40px;        
+    .header_wrap{
+        width: 1920px;        
+        padding: 0 120px;
+    }
+}
+
+main{
+    width: 1920px;    
+    margin: 0 auto;
+    .con01{
+        width: 1920px;
+        margin: 0 auto;
+        .slide01{
+            @include width100();    
+            overflow: hidden;
+            position: relative;
+            .main_rolling{
+                a{
+                    img{
+                        @include width100();    
+                    }
+                }
+            } 
+            .slick-dots{
+                position: absolute;
+                bottom: 30px;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                li{
+                    button{
+                        font-size: 0;
+                        border: none;
+                        background: none;
+                        width: 13px;
+                        height: 13px;
+                        margin: 0 5px;
+                        background-color: #a5a5a5;
+                        border-radius: 100%;
+                    }
+                    &.slick-active button{
+                        background-color: #000
+                    }
+                }
+            }
+            .slick-arrow{
+                font-size: 0;
+                border: none;
+                position: absolute;
+                top: 50%;
+                width: 35px;
+                height: 60px;
+                transform: translateY(-50%);
+                z-index: 1;
+                opacity: 0.4;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .slick-prev{
+                left: 30px;
+                background: url('https://spao.com/morenvyimg/main_arrow_left.png') no-repeat;
+            }
+            .slick-next{
+                right: 30px;
+                background: url('https://spao.com/morenvyimg/main_arrow_right.png') no-repeat;
+            }
+        }
+        
+    }
+    .con02{
+        article{
+            height: 920px;
+            .con_title{                
+                @include alineCenter();
+                h2{
+                    @include slideTitle();                
+                }
+            }
+            .slide02{
+                @include slideWrap();
+                flex-wrap: wrap;
+                position: relative;
+                li{
+                    margin: 0 10px;
+                    width: 410px;
+                    figure{
+                        @include width100(); 
+                        img{@include width100();}
+                    }
+                    .detail{
+                        @include width100(); 
+                        padding: 20px 0;
+                        .tshirt_title{
+                            display: flex;
+                            justify-content: space-between;
+                            a{
+                                @include slideDetailA();
+                            }
+                            button{
+                                @include slideDetailBtn();
+                            }
+                        }                    
+                        .price{
+                            @include slidePrice();
+                            span:nth-of-type(1){
+                                @include slidePriceSpan1();
+                            }
+                            span:nth-of-type(2){
+                                @include slidePriceSpan2();
+                            }
+                            span:nth-of-type(3){
+                                @include slidePriceSpan3();
+                            }
+                        }
+                        p{
+                            @include slideP();                            
+                            color: #9a9a9a;
+                        }
+                        .stock{
+                            @include slideStock();
+                            img{}
+                        }
+                    }                    
+                }
+                .slick-arrow{
+                    font-size: 0;
+                    border: none;
+                    position: absolute;
+                    top: 265px;
+                    width: 35px;
+                    height: 60px;
+                    opacity: 0.6;
+                    &:hover{
+                        opacity: 1;                        
+                    }
+                }
+                .slick-prev{
+                    left: -70px;
+                    background: url('https://spao.com/morenvyimg/main_arrow_left2.png') no-repeat;                    
+                    background-size: contain;
+                }
+                .slick-next{
+                    right: -70px;
+                    background: url('https://spao.com/morenvyimg/main_arrow_right2.png') no-repeat;                    
+                    background-size: contain;
+                }
+            }
+        }
+    }
+    .con03{
+        margin-top: 50px;
+        article{
+            height: 1280px;   
+            background-color: #7fd3e1;
+            .con_title{                
+                @include alineCenter();
+                h2{
+                    @include slideTitle(); 
+                    color: #fff               
+                }
+            }
+            .slide03{
+                @include slideWrap();
+                flex-wrap: wrap;
+                position: relative;
+                .cool_rolling{
+                    margin: 0 10px;
+                    width: 553px;
+                    figure{
+                        @include width100(); 
+                        img{@include width100();}
+                    }
+                    .detail{
+                        @include width100(); 
+                        padding: 20px 0;
+                        .tshirt_title{
+                            display: flex;
+                            justify-content: space-between;
+                            a{
+                                @include slideDetailA();
+                            }
+                            button{
+                                @include slideDetailBtn();
+                            }
+                        }                    
+                        .price{
+                            @include slidePrice();
+                            span:nth-of-type(1){
+                                @include slidePriceSpan1();
+                            }
+                            span:nth-of-type(2){
+                                @include slidePriceSpan2();
+                            }
+                            span:nth-of-type(3){
+                                @include slidePriceSpan3();
+                            }
+                        }
+                        p{
+                            @include slideP();                            
+                            color: #5e5e5e;
+                        }
+                        .stock{
+                            @include slideStock();
+                            img{
+                                @include width100(); 
+                            }
+                        }
+                    }                    
+                }
+                .slick-dots{
+                    position: absolute;
+                    bottom: -70px;
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    li{
+                        button{
+                            font-size: 0;
+                            border: none;
+                            background: none;
+                            width: 13px;
+                            height: 13px;
+                            margin: 0 5px;
+                            background-color: #a5a5a5;
+                            border-radius: 100%;
+                        }
+                        &.slick-active button{
+                            background-color: #fff
+                        }
+                    }
+                }
+                .slick-arrow{
+                    font-size: 0;
+                    border: none;
+                    position: absolute;
+                    top: 337px;
+                    width: 35px;
+                    height: 60px;
+                    opacity: 0.7;
+                    &:hover{
+                        opacity: 1;                        
+                    }
+                }
+                .slick-prev{
+                    left: -70px;
+                    background: url('https://spao.com/morenvyimg/main_arrow_left2.png') no-repeat;                    
+                    background-size: contain;
+                }
+                .slick-next{
+                    right: -70px;
+                    background: url('https://spao.com/morenvyimg/main_arrow_right2.png') no-repeat;                    
+                    background-size: contain;
+                }
+            }
+        }
+    }
+    .con04{
+        margin: 130px 0 50px 0;
+        div{
+            @include width100();
+            display: flex;
+            p{
+                width: 50%;                
+                height: 200px;
+                img{@include width100();}
+            }
+        }
+    }
+    .con05{
+        article{            
+            // height: 920px;
+            .con_title{                
+                @include alineCenter();
+                h2{
+                    @include slideTitle();                
+                }
+            }
+            .categories{
+                @include alineCenter();
+                margin-bottom: 50px;
+                li{                    
+                    margin: 0 20px;
+                    line-height: 2;
+                    text-transform: uppercase;
+                    transition: 0.3s;
+                    font-size: 18px;
+                    position: relative;
+                    &.active{
+                        border-bottom: 3px solid black;
+                        font-weight: 700;
+                        &::after{
+                            content: '';
+                            top: 3px;
+                            right: -7px;
+                            width: 7px;
+                            height: 7px;
+                            position: absolute;
+                            border-radius: 100%;
+                            background-color: #c41e20;
+                        }
+                    }
+                }
+            }
+            .gallery01{
+                @include slideWrap();
+                flex-wrap: wrap;
+                height: 1670px;
+                li{
+                    margin: 0 20px 60px 0;
+                    width: 410px;
+                    transform: translateY(-5%); opacity: 0; 
+                    animation: a1 1s forwards;
+                    @keyframes a1{
+                        100%{transform: translateY(0%); opacity: 1;}
+                    }
+                    figure{
+                        @include width100(); 
+                        position: relative;
+                        img{@include width100();}
+                        figcaption{
+                            width: 50px; height: 50px;
+                            // background-color: #e86434;
+                            position: absolute;
+                            top: 0; left: 0;
+                            font-size: 22px;
+                            font-weight: bold;
+                            color: #FFF;
+                            @include alineCenter();
+                        }
+                    }
+                    .detail{
+                        @include width100(); 
+                        padding: 20px 0;
+                        .tshirt_title{
+                            display: flex;
+                            justify-content: space-between;                            
+                            a{
+                                @include slideDetailA();
+                            }
+                            button{
+                                @include slideDetailBtn();
+                            }
+                        }                    
+                        .price{
+                            @include slidePrice();
+                            span:nth-of-type(1){
+                                @include slidePriceSpan1();
+                            }
+                            span:nth-of-type(2){
+                                @include slidePriceSpan2();
+                            }
+                            span:nth-of-type(3){
+                                @include slidePriceSpan3();
+                            }
+                        }
+                        p{
+                            @include slideP();                            
+                            color: #9a9a9a;
+                        }
+                        .stock{
+                            @include slideStock();
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+    .con06{
+        @include width100();
+        height: 540px;
+        padding-bottom: 45px;
+        .gallery02{
+            // @include slideWrap();
+            // justify-content: space-between;
+            // flex-wrap: wrap;
+            // height: 430px;           
+            .review{
+                margin-bottom: 5px;
+                width: 210px; height: 210px;
+                border: 1px solid #e5e5e5;
+                overflow: hidden;
+                img{@include width100();}
+            }    
+        }
+    }
+    .con07{
+        article{            
+            // height: 920px;
+            .con_title{                
+                @include alineCenter();
+                h2{
+                    @include slideTitle();                
+                }
+            }
+            .gallery03{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li{
+                    width: 920px;                    
+                    margin-bottom: 95px;
+                    &:nth-of-type(even){
+                        margin-top: 95px;
+                    }
+                    a{
+                        p{
+                            height: 500px;                            
+                            overflow: hidden;
+                            img{
+                                @include width100();
+                                transition: 0.3s;
+                            }                            
+                        }
+                        span{
+                            padding-top: 20px;
+                            font-size: 20px;
+                            font-weight: 600;
+                            @include alineCenter();
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .con08{
+        article{            
+            // height: 920px;
+            .con_title{                
+                @include alineCenter();
+                h2{
+                    @include slideTitle();                
+                }
+            }
+            .slide04{
+                ul{
+                    display: flex;
+                    overflow: hidden;
+                    li{
+                        width: 756px;
+                        height: 505px;                    
+                        flex-shrink: 0;
+                        margin-right: 10px;
+                        overflow: hidden;
+                        a{
+                            position: relative;                        
+                            figure{
+                                @include width100();
+                                position: relative;
+                                img{
+                                    @include width100();
+                                    position: relative;    
+                                    transition: 0.3s;                          
+                                }
+                                figcaption{
+                                    position: absolute;
+                                    top: 40px; left: 30px;
+                                    font-size: 20px;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    z-index: 1;
+                                }
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    left: 0; top: 0;
+                                    display: block;
+                                    width: 100%; height: 100%;
+                                    background-color: rgba($color: #000000, $alpha: 0.2);
+                                }  
+                            }
+                            p{                
+                                position: absolute;            
+                                width: 756px;
+                                height: 505px;
+                                @include alineCenter();                      
+                                text-transform: uppercase;
+                                top: 0; left: 0;   
+                                font-size: 50px;
+                                font-weight: 700;
+                                color: #fff;                         
+                            }
+                        }
+                    }                    
+                    .slick-arrow{
+                        font-size: 0;
+                        border: none;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 35px;
+                        height: 60px;
+                        opacity: 0.7;
+                        z-index: 1;
+                        &:hover{
+                            opacity: 1;                        
+                        }
+                    }
+                    .slick-prev{
+                        left: 70px;
+                        background: url('https://spao.com/morenvyimg/main_arrow_left2.png') no-repeat;                    
+                        background-size: contain;
+                    }
+                    .slick-next{
+                        right: 70px;
+                        background: url('https://spao.com/morenvyimg/main_arrow_right2.png') no-repeat;                    
+                        background-size: contain;
+                    }                
+                }                
+            }
+        }
+    }
+    .con09{
+        article{
+            margin-top: 40px;
+            margin-bottom: 150px;
+            .con_title{                
+                @include alineCenter();
+                h2{
+                    @include slideTitle();                
+                }
+            }
+            .slide05{
+                @include slideWrap();
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .snap_slide{
+                    width: 2324px;
+                    height: 324px;
+                    overflow: hidden;
+                    position: relative;
+                    margin: 0 10px;
+                    a{                        
+                        .description{
+                            display: none;
+                            z-index: 1;
+                            width: 324px;
+                            height: 324px;                              
+                            position: relative;  
+                            background-color: rgba($color: #000000, $alpha: 0.3);
+                            &.active{
+                                @include alineCenter();
+                            }
+                            span{
+                                color: #fff;
+                                font-size: 18px;
+                            }
+                            span:nth-of-type(2){
+                                position: absolute;
+                                bottom: 15px;
+                                right: 20px;
+                            }  
+                        }
+                        p{
+                            @include width100();
+                            position: absolute;
+                            top: 0; left: 0;
+                            img{
+                                @include width100();
+                            }
+                        }
+
+                    }                    
+                }
+                .slick-arrow{
+                    font-size: 0;
+                    border: none;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 35px;
+                    height: 60px;
+                    opacity: 0.7;
+                    z-index: 1;
+                    &:hover{
+                        opacity: 1;                        
+                    }
+                }
+                .slick-prev{
+                    left: -70px;
+                    background: url('https://spao.com/morenvyimg/main_arrow_left2.png') no-repeat;                    
+                    background-size: contain;
+                }
+                .slick-next{
+                    right: -70px;
+                    background: url('https://spao.com/morenvyimg/main_arrow_right2.png') no-repeat;                    
+                    background-size: contain;
+                } 
+            }
+        }
+    }
+}
