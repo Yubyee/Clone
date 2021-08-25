@@ -10,6 +10,7 @@ a{text-decoration: none;}
 
 header{
     .header_box{
+        position: relative;
         .topbanner{
             @include width100();
             height: 40px;
@@ -31,10 +32,11 @@ header{
                 background: url('../img/close.png') no-repeat center center;
             }
         }
-        
         .header{
             @include width100(); 
             z-index: 1;
+            background-color: rgba($color: #fff, $alpha: 0);
+            transition: 0.3s;
             .header_wrap{
                 height: 90px;
                 display: flex;
@@ -52,8 +54,9 @@ header{
                 .menu{
                     width: 71%;
                     li{
-                        display: inline-block;            
-                        a{
+                        display: inline-block;     
+                        line-height: 90px;
+                        .name{
                             color: #fff;
                             margin-right: 30px;
                             text-transform: uppercase
@@ -61,7 +64,8 @@ header{
                         .menu_sub{
                             @include width100();
                             position: absolute;
-                            left: 0; top: 90px;
+                            left: 0; bottom: 0px;
+                            transform: translateY(100%);
                             background-color: #fff;
                             display: none;
                             .menu_sub_wrap{
@@ -87,7 +91,8 @@ header{
                                     position: absolute;    
                                     right: 0;                        
                                     display: flex;
-                                    justify-content: space-between;                            
+                                    justify-content: space-between;  
+                                    // padding-top: 30px;                          
                                     figure{
                                         width: 200px;
                                         margin: 0 10px;
@@ -115,7 +120,10 @@ header{
                                         }
                                     }
                                 }
-                            }                   
+                            }  
+                            // &.active{
+                            //     display: block;
+                            // }                                            
                         }
                     }
                 }
@@ -134,8 +142,29 @@ header{
                     .cart{background: url('../img/cart_w.png') no-repeat 100% center;}
                 }
             } 
+            &.active{
+                background-color: rgba($color: #fff, $alpha: 1);
+                .header_wrap{
+                    h1{
+                        background: url('../img/logo_r.png') no-repeat center center;
+                    }
+                    .menu{
+                        li{         
+                            a{
+                                color: #1a1a1a;
+                            }
+                        }
+                    }
+                    .quick{
+                        .my{background: url('../img/mypage_b.png') no-repeat 100% center;}
+                        .search{background: url('../img/search_b.png') no-repeat 100% center;}
+                        .like{background: url('../img/wish_b.png') no-repeat 100% center;}
+                        .cart{background: url('../img/cart_b.png') no-repeat 100% center;}
+                    }
+                } 
+            }  
             &.scrolled{
-                background-color: #fff;
+                background-color: rgba($color: #fff, $alpha: 1);
                 .header_wrap{
                     h1{
                         background: url('../img/logo_r.png') no-repeat center center;

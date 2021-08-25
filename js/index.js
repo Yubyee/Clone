@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', function(){
                                     <div class="price">
                                         <span>7,900</span>
                                         <span>${v.originPrice}</span>
-                                        <span>${v.rate}</span>
+                                        <span>${v.rate}%</span>
                                     </div>
                                     <p>리뷰 ${v.review}건</p> 
                                     <div class="stock">
@@ -75,7 +75,7 @@ window.addEventListener('DOMContentLoaded', function(){
                                     <div class="price">
                                         <span>${v.salePrice}</span>
                                         <span>${v.originPrice}</span>
-                                        <span>${v.rate}</span>
+                                        <span>${v.rate}%</span>
                                     </div>
                                     <p>리뷰 ${v.review}건</p> 
                                 </div>                       
@@ -149,16 +149,21 @@ window.addEventListener('DOMContentLoaded', function(){
             
             // con06
             contents='';
-            a.review.forEach(function(v){
-                contents +=`<li class="review"><img src="${v.img}" alt=""></li>`                
-            })      
-            $('.gallery02').html(contents);      
+            for(let i=0; i<16; i++){
+                contents +=`<img src="${a.review[i].img}" alt="">`                
+            }
+            $('.review').html(contents);   
+            contents='';
+            for(let i=16; i<a.review.length; i++){
+                contents +=`<img src="${a.review[i].img}" alt="">`                
+            }
+            $('.review2').html(contents);   
             $('.gallery02').slick({
                 arrows: true,
                 dots: true,
                 infinite: false,
-                slidesToShow: 8,
-                slidesToScroll: 8,
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 fade: true,
                 autoplay: false
             });

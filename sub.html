@@ -279,7 +279,11 @@
                             <p>1</p>
                             <button>+</button>
                         </div>
-                        <strong>49,900</strong>
+                 // 수량 변경 후 가격 변경
+
+                $('.product_price').each(function(i,e){
+                   console.log(i,e)
+                })                       <strong>49,900</strong>
                         <button class="close"></button>
                     </li> -->
                 </ul>
@@ -297,7 +301,7 @@
                 <div class="total">
                     <p>총 상품금액</p>
                     <div class="total_price">
-                        <em>49,900</em>
+                        <em>0</em>
                         <small>(1개)</small>
                     </div>                    
                 </div>
@@ -433,14 +437,14 @@
                                     <strong>키</strong>
                                     <small>cm</small>
                                 </p>         
-                                <input type="number">                                                       
+                                <input type="number" placeholder="키" class="cm">                                                       
                             </div>
                             <div>
                                 <p>
                                     <strong>몸무게</strong>
                                     <small>kg</small>
                                 </p>         
-                                <input type="number"> 
+                                <input type="number" placeholder="몸무게" class="kg"> 
                             </div>
                         </div>
                         <input type="submit" value="사이즈 찾기" class="size_serch">
@@ -483,7 +487,7 @@
                                     <i>
                                         <img src="https://assets.cre.ma/fit/assets/svg/chart-ad186eab8528c2e551cecd9b34fd868fc4b7f062b170eeef6194fcfd55415e4c.svg" alt="">
                                     </i>
-                                    <span>100% 잘 맞아요 평가</span>
+                                    <span>80% 잘 맞아요 평가</span>
                                 </div>
                                 <ul>
                                     <li>
@@ -493,7 +497,7 @@
                                                 <div class="black"></div>
                                                 <div class="gray"></div>
                                             </div>                                            
-                                            <span>0%</span>
+                                            <span>20%</span>
                                         </div>
                                     </li>
                                     <li>
@@ -513,7 +517,7 @@
                                                 <div class="black"></div>
                                                 <div class="gray"></div>
                                             </div>                                            
-                                            <span>100%</span>
+                                            <span>80%</span>
                                         </div>
                                     </li>
                                     <li>

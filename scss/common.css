@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+header .header_box {
+  position: relative;
+}
+
 header .header_box .topbanner {
   width: 100%;
   height: 40px;
@@ -45,6 +49,9 @@ header .header_box .topbanner button {
 header .header_box .header {
   width: 100%;
   z-index: 1;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .header_box .header .header_wrap {
@@ -75,9 +82,10 @@ header .header_box .header .header_wrap .menu {
 
 header .header_box .header .header_wrap .menu li {
   display: inline-block;
+  line-height: 90px;
 }
 
-header .header_box .header .header_wrap .menu li a {
+header .header_box .header .header_wrap .menu li .name {
   color: #fff;
   margin-right: 30px;
   text-transform: uppercase;
@@ -87,7 +95,9 @@ header .header_box .header .header_wrap .menu li .menu_sub {
   width: 100%;
   position: absolute;
   left: 0;
-  top: 90px;
+  bottom: 0px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   background-color: #fff;
   display: none;
 }
@@ -212,8 +222,36 @@ header .header_box .header .header_wrap .quick .cart {
   background: url("../img/cart_w.png") no-repeat 100% center;
 }
 
+header .header_box .header.active {
+  background-color: white;
+}
+
+header .header_box .header.active .header_wrap h1 {
+  background: url("../img/logo_r.png") no-repeat center center;
+}
+
+header .header_box .header.active .header_wrap .menu li a {
+  color: #1a1a1a;
+}
+
+header .header_box .header.active .header_wrap .quick .my {
+  background: url("../img/mypage_b.png") no-repeat 100% center;
+}
+
+header .header_box .header.active .header_wrap .quick .search {
+  background: url("../img/search_b.png") no-repeat 100% center;
+}
+
+header .header_box .header.active .header_wrap .quick .like {
+  background: url("../img/wish_b.png") no-repeat 100% center;
+}
+
+header .header_box .header.active .header_wrap .quick .cart {
+  background: url("../img/cart_b.png") no-repeat 100% center;
+}
+
 header .header_box .header.scrolled {
-  background-color: #fff;
+  background-color: white;
 }
 
 header .header_box .header.scrolled .header_wrap h1 {

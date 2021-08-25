@@ -141,7 +141,7 @@
             "img":"img/index/women_01.jpg", 
             "salePrice": "9,900",
             "originPrice":"19,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"60",
             "order":""
         },
@@ -152,7 +152,7 @@
             "img":"img/index/women_02.jpg", 
             "salePrice": "7,900",
             "originPrice":"15,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"42" ,
             "order":""           
         },
@@ -185,7 +185,7 @@
             "img":"img/index/women_05.webp", 
             "salePrice": "7,900",
             "originPrice":"15,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"44" ,
             "order":""           
         },
@@ -196,7 +196,7 @@
             "img":"img/index/women_06.jpg", 
             "salePrice": "48,900",
             "originPrice":"69,900", 
-            "rate":"30",
+            "rate":"30%",
             "review":"543"  ,
             "order":""          
         },
@@ -207,7 +207,7 @@
             "img":"img/index/women_07.jpg", 
             "salePrice": "9,900",
             "originPrice":"19,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"37"   ,
             "order":""         
         },
@@ -218,7 +218,7 @@
             "img":"img/index/women_08.jpg", 
             "salePrice": "9,900",
             "originPrice":"19,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"26" ,
             "order":""           
         }
@@ -231,7 +231,7 @@
             "img":"img/index/men_01.jpg", 
             "salePrice": "7,900",
             "originPrice":"15,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"84" ,
             "order":""           
         },
@@ -242,7 +242,7 @@
             "img":"img/index/men_02.jpg", 
             "salePrice": "7,900",
             "originPrice":"15,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"53"  ,
             "order":""          
         },
@@ -253,7 +253,7 @@
             "img":"img/index/men_03.jpg", 
             "salePrice": "7,900",
             "originPrice":"12,900", 
-            "rate":"39",
+            "rate":"39%",
             "review":"36",
             "order":""            
         },
@@ -264,7 +264,7 @@
             "img":"img/index/men_04.jpg", 
             "salePrice": "62,900",
             "originPrice":"89,900", 
-            "rate":"30",
+            "rate":"30%",
             "review":"2" ,
             "order":""           
         },
@@ -275,7 +275,7 @@
             "img":"img/index/men_05.jpg", 
             "salePrice": "9,900",
             "originPrice":"19,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"44" ,
             "order":""           
         },
@@ -286,7 +286,7 @@
             "img":"img/index/men_06.jpg", 
             "salePrice": "7,900",
             "originPrice":"15,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"46"  ,
             "order":""          
         },
@@ -297,7 +297,7 @@
             "img":"img/index/men_07.jpg", 
             "salePrice": "9,900",
             "originPrice":"15,900", 
-            "rate":"38",
+            "rate":"38%",
             "review":"667" ,
             "order":""           
         },
@@ -308,7 +308,7 @@
             "img":"img/index/men_08.jpg", 
             "salePrice": "48,900",
             "originPrice":"69,900", 
-            "rate":"30",
+            "rate":"30%",
             "review":"26" ,
             "order":""           
         }
@@ -332,7 +332,7 @@
             "img":"img/index/kids_02.jpg", 
             "salePrice": "14,900",
             "originPrice":"29,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"9"  ,
             "order":""          
         },
@@ -365,7 +365,7 @@
             "img":"img/index/kids_05.jpg", 
             "salePrice": "12,900",
             "originPrice":"25,900", 
-            "rate":"50",
+            "rate":"50%",
             "review":"1"  ,
             "order":""          
         },
@@ -422,7 +422,7 @@
             "img":"img/index/coll_02.jpg", 
             "salePrice": "15,900",
             "originPrice":"19,900", 
-            "rate":"20",
+            "rate":"20%",
             "review":"161" ,
             "order":"img/index/order2.png"           
         },

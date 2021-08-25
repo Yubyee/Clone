@@ -388,6 +388,8 @@ main .con01 .detail_select .mychoice li {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 main .con01 .detail_select .mychoice li .seleted_info {
@@ -434,7 +436,15 @@ main .con01 .detail_select .mychoice li strong {
 }
 
 main .con01 .detail_select .mychoice li .close {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: url("../img/sub/close.png") no-repeat center center;
+  background-size: 100%;
+  opacity: 0.2;
+  border: none;
 }
 
 main .con01 .detail_select .size {
@@ -462,9 +472,6 @@ main .con01 .detail_select .size p {
 }
 
 main .con01 .detail_select .total {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -473,6 +480,7 @@ main .con01 .detail_select .total {
           align-items: flex-end;
   border-top: 1px solid #e5e5e5;
   padding: 30px 0 10px 0;
+  display: none;
 }
 
 main .con01 .detail_select .total p {
@@ -534,16 +542,16 @@ main .con01 .detail_select .buy_btn .wish img {
           transform: translate(-50%, -50%);
 }
 
-main .con01 .detail_select .buy_btn .wish.active {
+main .con01 .detail_select .buy_btn .wish:hover {
   border: 1px solid #000;
 }
 
 main .con01 .detail_select .buy_btn .mycart {
   width: 145px;
-  border: 1px solid #909090;
+  border: 1px solid #c9c9c9;
 }
 
-main .con01 .detail_select .buy_btn .mycart.active {
+main .con01 .detail_select .buy_btn .mycart:hover {
   border: 1px solid #000;
 }
 
@@ -800,6 +808,12 @@ main .con03 .mysize .size_right .myfit .size_serch.active {
   background-color: #222222;
 }
 
+main .con03 .mysize .size_right .myfit p {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
 main .con03 .mysize .size_right .size_compare {
   border-bottom: 1px solid #eeeeee;
   padding: 24px;
@@ -929,6 +943,7 @@ main .con03 .mysize .size_right .size_feedback .feedback_box .feedback_btn .feed
 main .con03 .mysize .size_right .size_feedback .feedback_box .feedback_btn ul {
   border-top: 1px solid #eeeeee;
   padding: 21px 16px 0px;
+  display: none;
 }
 
 main .con03 .mysize .size_right .size_feedback .feedback_box .feedback_btn ul li {
@@ -994,6 +1009,7 @@ main .con03 .mysize .size_right .size_feedback .feedback_box .feedback_btn ul li
 
 main .con03 .mysize .size_right .size_feedback .feedback_box .feedback_btn .feedback_close {
   text-align: center;
+  display: none;
 }
 
 main .con03 .mysize .size_right .size_feedback .feedback_box .feedback_btn .feedback_close button {
